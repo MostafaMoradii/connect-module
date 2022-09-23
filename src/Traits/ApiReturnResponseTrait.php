@@ -9,7 +9,7 @@ trait ApiReturnResponseTrait
         'error_code' => 0
     ];
 
-    public function sendResponse($data, $message)
+    public function sendResponse($data, $message = '')
     {
         $schema = $this->schema;
         $schema['response'] = $data;
@@ -17,7 +17,7 @@ trait ApiReturnResponseTrait
         return response($schema, 200);
     }
 
-    public function sendError($message, $errorCode, $data = [], $responseCode = 200)
+    public function sendError($message, $errorCode = 404, $data = [], $responseCode = 200)
     {
         $schema = $this->schema;
         $schema['success'] = false;
