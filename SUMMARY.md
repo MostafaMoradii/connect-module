@@ -1,0 +1,17 @@
+# Table of contents
+
+* [OAuth2 Connect Module](README.md)
+* [docs](docs/README.md)
+  * [en](docs/en/README.md)
+    * [01.introduction](docs/en/01.introduction/README.md)
+      * [Introduction](docs/en/01.introduction/01.index.md)
+      * [Features](docs/en/01.introduction/02.features.md)
+      * [Installation](docs/en/01.introduction/03.installation.md)
+      * [Addon Configuration](docs/en/01.introduction/04.addon-configuration.md)
+    * [02.usage](docs/en/02.usage/README.md)
+      * [Usage](docs/en/02.usage/01.index.md)
+      * [Scopes](docs/en/02.usage/02.scopes.md)
+      * [Issuing Tokens](docs/en/02.usage/03.issuing-tokens.md)
+      * [API Access](docs/en/02.usage/04.api-access.md)
+      * [API Routes](docs/en/02.usage/05.api-routes.md)
+      * [Formatters](docs/en/02.usage/06.formatters.md)
