@@ -4,6 +4,7 @@ use Visiosoft\ConnectModule\Command\LoadKeys;
 use Visiosoft\ConnectModule\Command\LoadScopes;
 use Visiosoft\ConnectModule\Events\ActivateAccount;
 use Visiosoft\ConnectModule\Events\ResetPassword;
+use Visiosoft\ConnectModule\Http\Middleware\SetLastActivityMiddleware;
 use Visiosoft\ConnectModule\Http\Middleware\SetLocaleMiddleware;
 use Visiosoft\ConnectModule\Listeners\SendActivationMail;
 use Visiosoft\ConnectModule\Listeners\SendResetMail;
@@ -48,7 +49,8 @@ class ConnectModuleServiceProvider extends AddonServiceProvider
     ];
 
     protected $middleware = [
-        SetLocaleMiddleware::class
+        SetLocaleMiddleware::class,
+        SetLastActivityMiddleware::class
     ];
 
     /**
